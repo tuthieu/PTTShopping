@@ -50,4 +50,8 @@ router.get("/info", function (req, res, next) {
   res.render("info", { title: "PTTShopping - Personal Information" });
 });
 
+router.get("/cart", function (req, res, next) {
+  res.render("cart", { title: "PTTShopping - Shopping Cart" });
+});
+
 module.exports = router;
