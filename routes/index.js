@@ -42,4 +42,12 @@ router.get("/admin_login", function (req, res, next) {
   res.render("admin_login", { title: "PTTShopping - Admin login" });
 });
 
+router.get("/admin_info", function (req, res, next) {
+  res.render("admin_info", { title: "PTTShopping - Admin Information" });
+});
+
+router.get("/info", function (req, res, next) {
+  res.render("info", { title: "PTTShopping - Personal Information" });
+});
+
 module.exports = router;
