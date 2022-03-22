@@ -3,7 +3,7 @@
   <div class="container d-flex justify-content-between align-items-center">
 
     <a class="navbar-brand text-success logo h1 align-self-center" href="index">
-      Zay
+      PTT SHOP
     </a>
 
     <button
@@ -114,90 +114,95 @@
   </div>
 </div>
 
-<!-- Start Content Page -->
-<div class="container-fluid bg-light py-5">
-  <div class="col-md-6 m-auto text-center">
-    <h1 class="h1">Contact Us</h1>
-    <p>
-      Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet.
-    </p>
-  </div>
-</div>
+<!-- Checkout Section Begin -->
+<section class="checkout spad">
+  <div class="container">
+    <section class="vh-100">
+      <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img
+              src="images/banner_img_01.jpg"
+              class="img-fluid"
+              alt="Sample image"
+            />
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form>
+              <div
+                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+              >
+                <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
 
-<!-- Start Map -->
-<div id="mapid" style="width: 100%; height: 300px;"></div>
-<script
-  src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""
-></script>
-<script>
-  var mymap = L.map('mapid').setView([-23.013104, -43.394365, 13], 13);
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw',
-  { maxZoom: 18, attribution: 'Zay Telmplte | Template Design by <a
-  href="https://templatemo.com/">Templatemo</a> | Map data &copy; <a
-  href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a
-  href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-  'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>', id:
-  'mapbox/streets-v11', tileSize: 512, zoomOffset: -1 }).addTo(mymap);
-  L.marker([-23.013104, -43.394365, 13]).addTo(mymap) .bindPopup("<b>Zay</b>
-  eCommerce Template<br />Location.").openPopup();
-  mymap.scrollWheelZoom.disable(); mymap.touchZoom.disable();
-</script>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
 
-<!-- Start Contact -->
-<div class="container py-5">
-  <div class="row py-5">
-    <form class="col-md-9 m-auto" method="post" role="form">
-      <div class="row">
-        <div class="form-group col-md-6 mb-3">
-          <label for="inputname">Name</label>
-          <input
-            type="text"
-            class="form-control mt-1"
-            id="name"
-            name="name"
-            placeholder="Name"
-          />
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </button>
+              </div>
+
+              <div class="align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0">Or</p>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-2">
+                <input
+                  type="email"
+                  id="form3Example3"
+                  class="form-control form-control-lg"
+                  placeholder="Enter email address"
+                />
+                <label class="form-label" for="form3Example3"></label>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-2">
+                <input
+                  type="password"
+                  id="form3Example4"
+                  class="form-control form-control-lg"
+                  placeholder="Enter password"
+                />
+                <label class="form-label" for="form3Example4"></label>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-0">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                  />
+                  <label class="form-check-label" for="form2Example3">
+                    Remember me
+                  </label>
+                </div>
+                <a href="#!" class="text-body">Forgot password?</a>
+              </div>
+
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem;"
+                >Sign in</button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?
+                  <a href="register" class="link-danger">Sign up</a></p>
+              </div>
+
+            </form>
+          </div>
         </div>
-        <div class="form-group col-md-6 mb-3">
-          <label for="inputemail">Email</label>
-          <input
-            type="email"
-            class="form-control mt-1"
-            id="email"
-            name="email"
-            placeholder="Email"
-          />
-        </div>
       </div>
-      <div class="mb-3">
-        <label for="inputsubject">Subject</label>
-        <input
-          type="text"
-          class="form-control mt-1"
-          id="subject"
-          name="subject"
-          placeholder="Subject"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="inputmessage">Message</label>
-        <textarea
-          class="form-control mt-1"
-          id="message"
-          name="message"
-          placeholder="Message"
-          rows="8"
-        ></textarea>
-      </div>
-      <div class="row">
-        <div class="col text-end mt-2">
-          <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
-        </div>
-      </div>
-    </form>
+    </section>
+
   </div>
-</div>
-<!-- End Contact -->
+</section>
